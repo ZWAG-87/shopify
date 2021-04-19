@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>{{ config("app.name") }}</title>
+    <title>{{ config("app.name").$title }}</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,13 +9,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-  <link rel="stylesheet" href="{{ asset("/css/test.css") }}" crossorigin="anonymous" />
 
 
   </head>
   <body>
   <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-      <a class="navbar-brand" href="{{route('accueil')  }}">SHOPIFY</a>
+      <a class="navbar-brand" href="{{route('accueil')  }}">Bibliothèque</a>
       <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
           aria-expanded="false" aria-label="Toggle navigation"></button>
       <div class="collapse navbar-collapse" id="collapsibleNavId">
@@ -24,7 +23,7 @@
                   <a class="nav-link" href="{{route('accueil')  }}">Accueil <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="{{ route('produits.index') }}">Produits</a>
+                  <a class="nav-link" href="{{ route('produits.index') }}">Livres</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link" href="#">A propos</a>
