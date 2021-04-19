@@ -18,7 +18,7 @@ class CategorySeeder extends Seeder
         Category::create([
             "libelle" => "Sac à main",
             "description" => "La description du sac à main",
-        ]);*
+        ]);
         Category::create([
             "libelle" => "Sac à pied",
             "description" => "La description du sac à main",
