@@ -1,4 +1,4 @@
-<x-master-layout>
+<x-master-layout title=" | Edition" >>
     <div class="container" >
     <div class="row" >
             <div class="col-md-6 offset-3" >
